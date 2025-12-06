@@ -1,0 +1,58 @@
+﻿html,body{
+  height:100%;
+  margin:0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: #fff;
+}
+.topbar{background:#000;height:40px;width:100%;}
+.container{padding:20px 30px;}
+h1.title{font-weight:400;margin:0 0 18px 0}
+/* Large input appearance to match screenshots */
+input[type="text"], input[type="password"], select{
+  display:block;
+  width:360px;
+  box-sizing:border-box;
+  padding:8px 10px;
+  font-size:48px;
+  color:#666;
+  border:2px solid #d0d0d0;
+  margin-bottom:8px;
+}
+input::placeholder{color:#999;font-size:48px}
+button.big, input[type="submit"].big{
+  display:inline-block;
+  width:340px;
+  height:60px;
+  font-size:48px;
+  background:#eee;
+  border:2px solid #d0d0d0;
+  cursor:pointer;
+  text-align:center;
+}
+a.smalllink{display:block;margin-top:8px}
+.prices{margin-top:8px}
+.prices ul{margin:8px 0 16px 20px}
+.welcome{font-size:20px;margin-bottom:8px}
+.uname{color:#d00;font-weight:bold}
+.result p{font-size:18px}
+.form-row{margin-bottom:8px}
+
+.menu-form label{display:inline-block;width:160px;font-size:18px;vertical-align:middle;margin-right:8px}
+.menu-form select, .menu-form input[type="text"]{
+  display:inline-block;
+  width:180px;
+  font-size:18px;
+  padding:8px 10px;
+  height:42px;
+  line-height:18px;
+  box-sizing:border-box;
+  color:#000;
+  vertical-align:middle;
+}
+.menu-form .form-row{margin-bottom:10px}
+.menu-form input[type="submit"]{width:100px;height:34px;font-size:14px;padding:6px}
+
+@media screen and (max-width:600px){
+  .menu-form label{display:block;width:auto;margin-bottom:6px}
+  .menu-form select, .menu-form input[type="text"]{display:block;width:100%}
+}
