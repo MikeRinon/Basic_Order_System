@@ -13,7 +13,6 @@ if($u === '' || $p === ''){
     exit;
 }
 
-// check existing user
 $stmt = $pdo->prepare('SELECT id FROM users WHERE username = ?');
 $stmt->execute([$u]);
 if($stmt->fetch()){

@@ -23,7 +23,6 @@ if(!$user || !password_verify($p, $user['password'])){
     exit;
 }
 
-// success
 $_SESSION['user'] = $user['username'];
 header('Location: menu.php');
 exit;
