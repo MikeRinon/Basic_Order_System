@@ -1,7 +1,5 @@
 # Basic Order System
 
-Simple PHP-based canteen ordering demo implementing registration, login, and a small ordering flow — styled to match provided screenshots.
-
 **Preview:** The app shows a large-font `Login` / `Register` UI, then a `Menu` page with prices, an inline order form (item / quantity / cash), and a small confirmation page showing total and change.
 
 **Installation**
