@@ -4,12 +4,12 @@ Simple PHP-based canteen ordering demo implementing registration, login, and a s
 
 **Preview:** The app shows a large-font `Login` / `Register` UI, then a `Menu` page with prices, an inline order form (item / quantity / cash), and a small confirmation page showing total and change.
 
-**Requirements**
-- **PHP 7.2+**: Running on a local server (XAMPP, WAMP) or PHP built-in server.
-- **Web server** (recommended): XAMPP (Apache + PHP) for easy local testing.
-
 **Installation**
 - Copy the `Basic_Order_System` folder into your webserver document root (for XAMPP that is `C:\xampp\htdocs`).
+
+**Importing the database (important)**
+- Use the provided SQL file `basic_order_system.sql` to create the database and `users` table. Do NOT try to import any `.php` files into phpMyAdmin — phpMyAdmin expects SQL, not PHP, and attempting to import a PHP file will produce syntax errors.
+- To import in phpMyAdmin: open phpMyAdmin, go to the Import tab, choose `basic_order_system.sql`, and click Go.
 
 **Run (XAMPP)**
 - Start Apache via the XAMPP control panel.
@@ -17,14 +17,7 @@ Simple PHP-based canteen ordering demo implementing registration, login, and a s
   ```
   http://localhost/Basic_Order_System/
   ```
-
-**Run (PHP built-in server)**
-- From PowerShell in the folder that contains `Basic_Order_System`, run:
-  ```powershell
-  php -S localhost:8000 -t .\Basic_Order_System
-  ```
-- Then open `http://localhost:8000/`.
-
+  
 **Usage**
 - Click `Register` and create a username/password (stored in the MySQL `users` table, password hashed).
 - Login with the registered credentials.
@@ -40,6 +33,7 @@ Simple PHP-based canteen ordering demo implementing registration, login, and a s
 - `logout.php` — clears session
 - `styles.css` — simple styles to match screenshots
 - `db.php` — database connection (PDO)
+- `basic_order_system.sql` — SQL file to create the database and `users` table (import in phpMyAdmin)
 
 **Security notes**
 - This is a demo app. Use a proper production-ready setup for real deployments.
