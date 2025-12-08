@@ -5,15 +5,17 @@ if(!isset($_SESSION['user'])){
     exit;
 }
 $item = $_POST['item'] ?? '';
-$qty = intval($_POST['qty'] ?? 0);
+$quantity = max(1, intval($_POST['quantity'] ?? 1));
 $cash = floatval($_POST['cash'] ?? 0);
 $prices = ['Fishball'=>30,'Kikiam'=>40,'Corndog'=>50];
-if(!isset($prices[$item]) || $qty<=0){
+if(!isset($prices[$item]) || $quantity<=0){
     echo 'Invalid order. <a href="menu.php">Back</a>';
     exit;
 }
-$total = $prices[$item] * $qty;
+$price_each = $prices[$item];
+$total = $price_each * $quantity;
 $change = $cash - $total;
+$date = date('m/d/Y h:i:s a');
 ?>
 <!doctype html>
 <html>

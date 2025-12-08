@@ -38,7 +38,7 @@ $prices = ['Fishball'=>30,'Kikiam'=>40,'Corndog'=>50];
       </div>
       <div class="form-row">
         <label for="qty">Quantity:</label>
-        <input type="text" id="qty" name="qty" value="">
+        <input type="text" id="qty" name="quantity" value="">
       </div>
       <div class="form-row">
         <label for="cash">Cash:</label>

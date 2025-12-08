@@ -31,10 +31,14 @@ button.big, input[type="submit"].big{
 a.smalllink{display:block;margin-top:8px}
 .prices{margin-top:8px}
 .prices ul{margin:8px 0 16px 20px}
-.welcome{font-size:20px;margin-bottom:8px}
+.welcome{font-size:26px;margin-bottom:8px;font-weight: bold;}
 .uname{color:#d00;font-weight:bold}
 .result p{font-size:18px}
 .form-row{margin-bottom:8px}
+
+h3{
+  font-size: 26px;
+}
 
 .menu-form label{display:inline-block;width:160px;font-size:18px;vertical-align:middle;margin-right:8px}
 .menu-form select, .menu-form input[type="text"]{
